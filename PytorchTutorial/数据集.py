@@ -5,9 +5,6 @@ import pandas as pd
 import numpy as np
 
 
-#
-# data = pd.read_csv("diabetes.csv", dtype=np.float32)
-# print(data.iloc[:, :-1].values)
 class DiabetesDataset(Dataset):
     def __init__(self, filepath):
         data = pd.read_csv("diabetes.csv", dtype=np.float32)
